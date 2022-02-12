@@ -1,0 +1,8 @@
+/* Import Font Family */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+:root{
+--acme-font: 'Acme', sans-serif;
+--lato-font: 'lato',sans-serif;
+}
