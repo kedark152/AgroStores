@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | AgroStores</title>
+    <!-- Import Component Library -->
+    <link
+      rel="stylesheet"
+      href="https://forest-ui.netlify.app/stylesheets/main.css"
+    />
+    <!-- Import Google Icons-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <!-- Font-Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- main nav -->
+    <nav class="align-center">
+      <div class="nav-brand fs-md"><a href="#">AgroStores</a></div>
+      <div class="search-field">
+        <i class="material-icons" id="search-icon">search</i>
+        <input
+          type="text"
+          name="search-bar"
+          id="search-bar"
+          placeholder="Search"
+        />
+      </div>
+
+      <ul class="nav-pills align-center fw-bold">
+        <li><a href="#" class="btn btn-solid btn-login">Login</a></li>
+        <li>
+          <a href="#">
+            <i class="material-icons mg-left-sm">favorite_border</i>
+            <span class="badge-count">0</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="material-icons mg-left-sm" id="shop-cart">
+              shopping_cart
+            </i>
+            <span class="badge-count">0</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Header Image -->
+    <header class="hero-header">
+      <h1 class="banner-title lt-sp-2 text-center">
+        One Stop Solution for your farming needs.
+      </h1>
+      <h2 class="banner-subtitle lt-sp-1 text-center">
+        Buy Fertilizers, Insectisides, Seeds & other Agriculture Products
+      </h2>
+      <a href="" class="btn btn-solid btn-shop-now">Shop Now</a>
+    </header>
+    <!-- Categories -->
+    <h2 class="text-center mg-top-md">Featured Categories</h2>
+    <div class="title-underline"></div>
+    <div class="categories">
+      <div class="category-items cat-item-1">
+        <p class="cat-item-text para-lg fw-bold">Fertilizers</p>
+        <img
+          class="img-responsive"
+          src="./assets/Images/fertilizers.jpg"
+          alt=""
+        />
+      </div>
+      <div class="category-items cat-item-2">
+        <p class="cat-item-text para-lg fw-bold">Pesticides</p>
+        <img
+          class="img-responsive"
+          src="./assets/Images/pesticides.jpg"
+          alt=""
+        />
+      </div>
+      <div class="category-items cat-item-3">
+        <p class="cat-item-text para-lg fw-bold">Tools</p>
+        <img class="img-responsive" src="./assets/Images/tools.jpg" alt="" />
+      </div>
+      <div class="category-items cat-item-4">
+        <p class="cat-item-text para-lg fw-bold">Seeds</p>
+        <img class="img-responsive" src="./assets/Images/seeds.jpg" alt="" />
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="flex-column-center pd-sm">
+      <p class="mg-bottom-xsm">Made by Kedar Kulkarni</p>
+      <div class="footer-links mg-bottom-xsm">
+        <a class="mg-xsm fs-sm-plus" href="https://github.com/kedark152"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          class="mg-xsm fs-sm-plus"
+          href="https://www.linkedin.com/in/kedark152"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a class="mg-xsm fs-sm-plus" href="https://twitter.com/Kulkarni12Kedar"
+          ><i class="fab fa-twitter"></i
+        ></a>
+      </div>
+      <p class="copyright mg-bottom-xsm">© 2022 Forest-UI</p>
+    </footer>
+  </body>
+</html>
