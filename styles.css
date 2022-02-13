@@ -1,0 +1,101 @@
+@import url(./css/utilities/variables.css);
+@import url(./css/layouts/navbar.css);
+@import url(./css/layouts/footer.css);
+html{
+    background-color: var(--lightest-green);
+    font-family: var(--acme-font);
+}
+
+/* Header */
+.hero-header{
+    width: 100%;
+    height: 80vh;
+    color: var(--secondary);
+    background-image: url(./assets/Images/farm-compressed.webp);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
+    position: relative;
+}
+
+.banner-title{
+    margin-top: 1.2rem;
+}
+
+.btn-shop-now{
+    position: absolute;
+    background-color: var(--white);
+    border: 2px solid var(--primary-hover);
+    color: var(--primary);
+    width: 10rem;
+    font-size: 1.5rem;
+    padding:0.5rem 1.5rem;
+    top: 50%;
+    left: 50%;
+    /* Center the button in div */
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.btn-shop-now:hover{
+    color: var(--white);
+    border: 2px solid var(--white);
+}
+.title-underline {
+    background-color: var(--primary);
+    width: 10rem;
+    height: 4px;
+    margin: 0.5rem auto 2rem;
+}
+.categories{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(5rem, 15rem));
+    grid-gap: 1rem;
+    justify-content: center;
+    margin: 1rem;
+  
+}
+.category-items{
+    position: relative;
+    opacity: 0.8;
+    border-radius: 5px;
+}
+
+.category-items:hover{
+   opacity: 1;
+   cursor: pointer;
+   box-shadow: 0 2px 8px;
+}
+.categories img{
+    height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  
+}
+
+.category-item-text{
+    position: absolute;
+    top: 4rem;
+    left:4rem;
+    color: var(--secondary);
+    background-color: var(--transparent-grey);
+    padding: 0.5rem;
+}
+
+
+
+@media screen and (max-width: 800px){
+  .banner-title{
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+      margin: 0.5rem;
+      line-height: normal;
+  }
+  .banner-subtitle{
+      font-size: 1rem;
+      letter-spacing: 1px;
+      margin: 0.5rem;
+      line-height: normal;
+  }
+  
+}
