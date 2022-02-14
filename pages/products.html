@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products | AgroStores</title>
+    <!-- Import Component Library -->
+    <link
+      rel="stylesheet"
+      href="https://forest-ui.netlify.app/stylesheets/main.css"
+    />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../css/page-styles/products.css" />
+  </head>
+  <body>
+    <!-- main nav -->
+    <nav class="align-center">
+      <div class="nav-brand fs-md">
+        <a href="../index.html">AgroStores</a>
+      </div>
+      <div class="search-field">
+        <i class="material-icons" id="search-icon">search</i>
+        <input
+          type="text"
+          name="search-bar"
+          id="search-bar"
+          placeholder="Search"
+        />
+      </div>
+
+      <ul class="nav-pills align-center fw-bold">
+        <li><a href="#" class="btn btn-solid btn-login">Login</a></li>
+        <li>
+          <a href="#">
+            <i class="material-icons mg-left-sm">favorite_border</i>
+            <span class="badge-count">1</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="material-icons mg-left-sm" id="shop-cart">
+              shopping_cart
+            </i>
+            <span class="badge-count">1</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Main Container -->
+    <div class="container-main">
+      <!-- Filters Side-Bar -->
+      <aside class="filters-sidebar flex-column pd-sm">
+        <div class="filter-title align-center mg-top-xsm">
+          <p class="para-md fw-bold filter-title">Filters</p>
+          <a class="para-sm" href="#">Clear</a>
+        </div>
+        <div class="filter-title mg-top-sm">
+          <p class="para-md fw-bold">Price in ₹</p>
+        </div>
+        <div class="filter-price flex">
+          <p id="price-min">100</p>
+          <p id="price-mid">1500</p>
+          <p id="price-max">3000</p>
+        </div>
+        <input
+          step="100"
+          type="range"
+          min="100"
+          max="3000"
+          value="100"
+          class="price-slider"
+          id="price-range"
+        />
+
+        <!-- Categories Filter -->
+        <div class="filter-title mg-top-sm mg-bottom-xsm">
+          <p class="para-md fw-bold">Categories</p>
+        </div>
+        <div class="categories-filter">
+          <div class="items align-center">
+            <input type="checkbox" name="Fertilizers" id="fertilizers" />
+            <label class="mg-xsm fw-bold" for="fertilizers">Fertilizers</label>
+          </div>
+          <div class="items align-center">
+            <input type="checkbox" name="Pesticides" id="pesticides" />
+            <label class="mg-xsm fw-bold" for="pesticides">Pesticides</label>
+          </div>
+          <div class="items align-center">
+            <input type="checkbox" name="Tools" id="tools" />
+            <label class="mg-xsm fw-bold" for="tools">Tools</label>
+          </div>
+          <div class="items align-center">
+            <input type="checkbox" name="Farm-Tools" id="seeds" />
+            <label class="mg-xsm fw-bold" for="seeds">Seeds</label>
+          </div>
+        </div>
+
+        <!-- Ratings -->
+        <div class="filter-title mg-top-sm mg-bottom-xsm">
+          <p class="para-md fw-bold">Ratings</p>
+        </div>
+        <div class="ratings-filter">
+          <div class="items align-center">
+            <input type="checkbox" name="4-above" id="4+" />
+            <label class="mg-xsm fw-bold" for="4+">4 Stars & above</label>
+          </div>
+          <div class="items align-center">
+            <input type="checkbox" name="3-above" id="3+" />
+            <label class="mg-xsm fw-bold" for="3+">3 Stars & above</label>
+          </div>
+          <div class="items align-center">
+            <input type="checkbox" name="2-above" id="2+" />
+            <label class="mg-xsm fw-bold" for="2+">2 Stars & above</label>
+          </div>
+          <div class="items align-center">
+            <input type="checkbox" name="1-above" id="1+" />
+            <label class="mg-xsm fw-bold" for="1+">1 Stars & above</label>
+          </div>
+        </div>
+        <!-- Sort-By -->
+        <div class="filter-title mg-top-sm mg-bottom-xsm">
+          <p class="para-md fw-bold">Sort By</p>
+        </div>
+        <div class="sort-by-filter">
+          <div class="items align-center">
+            <input type="radio" name="sort-radio" id="low-high" />
+            <label class="mg-xsm fw-bold" for="low-high">Low to High</label>
+          </div>
+          <div class="items align-center">
+            <input type="radio" name="sort-radio" id="high-low" />
+            <label class="mg-xsm fw-bold" for="high-low">High to Low</label>
+          </div>
+        </div>
+      </aside>
+      <!-- Product Cards -->
+      <div class="products-list">
+        <!-- Card-1  -->
+        <div class="card card-vertical prod-item-1">
+          <span class="card-badge-green">Best Seller</span>
+          <i class="material-icons" id="heart">favorite_border</i>
+          <div class="card-img-box">
+            <a href="#">
+              <img
+                src="https://m.media-amazon.com/images/I/71iPA5LfB7L._AC_UL320_.jpg"
+                alt="Vermi Compost"
+                class="card-img"
+              />
+            </a>
+          </div>
+          <div class="card-title">
+            <h4>
+              TrustBasket Organic Vermicompost Fertilizer Manure for Plants
+              (5KG)
+            </h4>
+          </div>
+          <p class="card-ratings">4.5 <i class="material-icons">star</i></p>
+          <div class="card-pricing">
+            <p class="card-price">₹332</p>
+            <p class="card-price-cut">₹349</p>
+            <p class="card-percent-discount">5% off</p>
+          </div>
+          <a href="#" class="btn btn-outline-icon fw-bold">
+            <i class="material-icons">shopping_cart</i>
+            Go to Cart
+          </a>
+        </div>
+        <!-- Card-2 -->
+        <div class="card card-vertical prod-item-2">
+          <span class="card-badge-purple">NEW</span>
+          <span class="material-icons" id="heart">favorite</span>
+          <div class="card-img-box">
+            <a href="#">
+              <img
+                src="https://m.media-amazon.com/images/I/61fUoGkNdHL._AC_UL320_.jpg"
+                alt="Soil-fertilizer"
+                class="card-img"
+              />
+            </a>
+          </div>
+          <div class="card-title">
+            <h4>
+              TrustBasket Enriched Organic Earth Magic Potting Soil Fertilizer
+              for Plants(5KG)
+            </h4>
+          </div>
+          <p class="card-ratings">
+            3.5
+            <i class="material-icons">star</i>
+          </p>
+          <div class="card-pricing">
+            <p class="card-price">₹345</p>
+            <p class="card-price-cut">₹360</p>
+            <p class="card-percent-discount">6% off</p>
+          </div>
+          <a href="#" class="btn btn-solid-icon">
+            <i class="material-icons">shopping_cart</i>
+            Add to Cart
+          </a>
+        </div>
+        <!-- Card-3 -->
+        <div class="card card-vertical prod-item-3">
+          <i class="material-icons" id="heart">favorite_border</i>
+          <div class="card-img-box">
+            <a href="#">
+              <img
+                src="https://m.media-amazon.com/images/I/61xnYxYWFsL._AC_UL320_.jpg"
+                alt="Sprayer"
+                class="card-img"
+              />
+            </a>
+          </div>
+          <div class="card-title">
+            <h4>
+              Fieldstar 8-Litre Plastic Manual Sprayer for spraying fertilizers
+              in Farms.
+            </h4>
+          </div>
+          <p class="card-ratings">3.5 <i class="material-icons">star</i></p>
+          <div class="card-pricing">
+            <p class="card-price">₹950</p>
+            <p class="card-price-cut">₹1999</p>
+            <p class="card-percent-discount">52% off</p>
+          </div>
+          <a href="#" class="btn btn-solid-icon">
+            <i class="material-icons">shopping_cart</i>
+            Add to Cart
+          </a>
+        </div>
+        <!-- Card-4 -->
+        <div class="card card-vertical prod-item-4">
+          <i class="material-icons" id="heart">favorite_border</i>
+          <div class="card-img-box">
+            <a href="#">
+              <img
+                src="https://m.media-amazon.com/images/I/71WLLgqaUCL._AC_UL320_.jpg"
+                alt="Soil Sensor"
+                class="card-img"
+              />
+            </a>
+          </div>
+          <div class="card-title">
+            <h4>
+              FreshDcart Solar Soil Plant Care New 3 In 1 Water Moisture Soil
+              Sensor.
+            </h4>
+          </div>
+          <p class="card-ratings">
+            3.8
+            <i class="material-icons">star</i>
+          </p>
+          <div class="card-pricing">
+            <p class="card-price">₹589</p>
+            <p class="card-price-cut">₹1010</p>
+            <p class="card-percent-discount">63% off</p>
+          </div>
+          <a href="#" class="btn btn-solid-icon">
+            <i class="material-icons">shopping_cart</i>
+            Add to Cart
+          </a>
+        </div>
+        <!-- Card-5 -->
+        <div class="card card-vertical prod-item-5">
+          <i class="material-icons" id="heart">favorite_border</i>
+          <div class="card-img-box">
+            <a href="#">
+              <img
+                src="https://images-eu.ssl-images-amazon.com/images/I/61f0YRC22oL._AC_UL160_SR160,160_.jpg"
+                alt="weeder"
+                class="card-img"
+              />
+            </a>
+          </div>
+          <div class="card-title">
+            <h4>
+              WOLFGARTEN Steel Multi Star Culti-Weeder without Handle for Farms
+            </h4>
+          </div>
+          <p class="card-ratings">3.5 <i class="material-icons">star</i></p>
+          <div class="card-pricing">
+            <p class="card-price">₹1,270</p>
+            <p class="card-price-cut">₹2000</p>
+            <p class="card-percent-discount">37% off</p>
+          </div>
+          <a href="#" class="btn btn-solid-icon">
+            <i class="material-icons">shopping_cart</i>
+            Add to Cart
+          </a>
+        </div>
+        <!-- Card-6 -->
+        <div class="card card-vertical prod-item-6">
+          <i class="material-icons" id="heart">favorite_border</i>
+          <div class="card-img-box">
+            <a href="#">
+              <img
+                src="https://m.media-amazon.com/images/I/31TYpYBcsoL._AC_UL320_.jpg"
+                alt="saftey-shoes"
+                class="card-img"
+              />
+            </a>
+          </div>
+          <div class="card-title">
+            <h4>
+              FULLFILLBUY Farmer Safety Shoes, Paddy shoes, Agriculture Safety
+              Shoes.
+            </h4>
+          </div>
+          <p class="card-ratings">
+            3.5
+            <i class="material-icons">star</i>
+          </p>
+          <div class="card-pricing">
+            <p class="card-price">₹1499</p>
+            <p class="card-price-cut">₹2000</p>
+            <p class="card-percent-discount">25% off</p>
+          </div>
+          <a href="#" class="btn btn-solid-icon">
+            <i class="material-icons">shopping_cart</i>
+            Add to Cart
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Filter on Mobile Button -->
+    <div class="btn-float-action btn-filter-float">
+      <i class="material-icons" id="filter-icon">filter_alt</i>
+    </div>
+    <!-- Footer -->
+    <footer class="flex-column-center pd-sm">
+      <p class="mg-bottom-xsm">Made by Kedar Kulkarni</p>
+      <div class="footer-links mg-bottom-xsm">
+        <a class="mg-xsm fs-sm-plus" href="https://github.com/kedark152"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          class="mg-xsm fs-sm-plus"
+          href="https://www.linkedin.com/in/kedark152"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a class="mg-xsm fs-sm-plus" href="https://twitter.com/Kulkarni12Kedar"
+          ><i class="fab fa-twitter"></i
+        ></a>
+      </div>
+      <p class="copyright mg-bottom-xsm">© 2022 AgroStores</p>
+    </footer>
+    <!-- Scripts -->
+    <script src="../scripts/products.js"></script>
+  </body>
+</html>
