@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Page | AgroStores</title>
+    <!-- Import Component Library -->
+    <link
+      rel="stylesheet"
+      href="https://forest-ui.netlify.app/stylesheets/main.css"
+    />
+    <!-- Import External css -->
+    <link rel="stylesheet" href="../css/page-styles/cart.css" />
+  </head>
+  <body>
+    <!-- nav-bar -->
+    <nav class="align-center">
+      <div class="nav-brand fs-md"><a href="../index.html">AgroStores</a></div>
+      <div class="search-field">
+        <i class="material-icons" id="search-icon">search</i>
+        <input
+          type="text"
+          name="search-bar"
+          id="search-bar"
+          placeholder="Search"
+        />
+      </div>
+
+      <ul class="nav-pills align-center fw-bold">
+        <li><a href="#" class="btn btn-solid btn-login">Login</a></li>
+        <li>
+          <a href="#">
+            <i class="material-icons mg-left-sm">favorite_border</i>
+            <span class="badge-count">0</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="material-icons mg-left-sm" id="shop-cart">
+              shopping_cart
+            </i>
+            <span class="badge-count">0</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- main-body -->
+    <h2 class="text-center mg-sm cart-heading">Shopping Cart</h2>
+    <div class="container-main flex">
+      <!-- Product-list -->
+      <div class="final-product-list flex-column-center">
+        <!-- Horizontal Cards - 1 -->
+        <div class="card card-horizontal">
+          <div class="card-img-box">
+            <a href="#">
+              <img
+                src="https://m.media-amazon.com/images/I/71iPA5LfB7L._AC_UL320_.jpg"
+                alt="Vermi Compost"
+                class="card-img"
+              />
+            </a>
+          </div>
+          <div class="card-horizontal-content">
+            <div class="card-title">
+              <h4>
+                TrustBasket Organic Vermicompost Fertilizer Manure for Plants -
+                5 KG
+              </h4>
+            </div>
+
+            <div class="item-quantity align-center">
+              <label for="quantity" class="fw-bold">Quantity:</label>
+              <input
+                type="number"
+                id="quantity"
+                name="quantity"
+                min="1"
+                max="5"
+                value="1"
+              />
+            </div>
+
+            <i class="material-icons" id="heart">favorite_border</i>
+            <div class="card-pricing">
+              <p class="card-price">₹332</p>
+              <p class="card-price-cut">₹349</p>
+              <p class="card-percent-discount">5% off</p>
+            </div>
+            <a href="#" class="btn btn-outline-icon fw-bold">
+              <i class="material-icons">remove_shopping_cart</i>
+              Remove from Cart
+            </a>
+          </div>
+        </div>
+
+        <!-- Horizontal Cards - 2 -->
+        <div class="card card-horizontal">
+          <div class="card-img-box">
+            <a href="#">
+              <img
+                src="https://m.media-amazon.com/images/I/61fUoGkNdHL._AC_UL320_.jpg"
+                alt="Vermi Compost"
+                class="card-img"
+              />
+            </a>
+          </div>
+          <div class="card-horizontal-content">
+            <div class="card-title">
+              <h4>
+                TrustBasket Enriched organic Earth Magic Potting Soil Fertilizer
+                for Plants, 5 Kg
+              </h4>
+            </div>
+            <div class="item-quantity align-center">
+              <label for="quantity" class="fw-bold">Quantity:</label>
+              <input
+                type="number"
+                id="quantity"
+                name="quantity"
+                min="1"
+                max="5"
+                value="1"
+              />
+            </div>
+
+            <i class="material-icons" id="heart">favorite</i>
+            <div class="card-pricing">
+              <p class="card-price">₹345</p>
+              <p class="card-price-cut">₹360</p>
+              <p class="card-percent-discount">6% off</p>
+            </div>
+            <a href="#" class="btn btn-outline-icon fw-bold">
+              <i class="material-icons">remove_shopping_cart</i>
+              Remove from Cart
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Price Details Summary -->
+      <div class="price-summary">
+        <h3 class="fw-bold mg-xsm">Price Details</h3>
+        <hr />
+        <div class="original-price price-item align-center mg-xsm fw-bold">
+          <h4>Price (2 items)</h4>
+          <p class="para-md">₹709</p>
+        </div>
+        <div class="discount-price price-item align-center mg-xsm fw-bold">
+          <h4>Discount</h4>
+          <p class="para-md">- ₹32</p>
+        </div>
+        <div class="delivery-charges price-item align-center mg-xsm fw-bold">
+          <h4>Delivery Charge</h4>
+          <p class="para-md">₹499</p>
+        </div>
+        <hr />
+        <div class="total-amount price-item flex align-center mg-xsm">
+          <h4>TOTAL AMOUNT</h4>
+          <p class="para-md">₹1176</p>
+        </div>
+        <hr />
+        <p class="note fw-bold mg-xsm">You will save ₹32 on this order</p>
+        <a href="" class="btn btn-solid fw-bold btn-place-order align-center">
+          PLACE ORDER
+        </a>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="flex-column-center pd-sm">
+      <p class="mg-bottom-xsm">Made by Kedar Kulkarni</p>
+      <div class="footer-links mg-bottom-xsm">
+        <a class="mg-xsm fs-sm-plus" href="https://github.com/kedark152"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          class="mg-xsm fs-sm-plus"
+          href="https://www.linkedin.com/in/kedark152"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a class="mg-xsm fs-sm-plus" href="https://twitter.com/Kulkarni12Kedar"
+          ><i class="fab fa-twitter"></i
+        ></a>
+      </div>
+      <p class="copyright mg-bottom-xsm">© 2022 AgroStores</p>
+    </footer>
+  </body>
+</html>

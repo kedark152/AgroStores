@@ -8,6 +8,7 @@ nav{
     height: auto;
     justify-content: space-around;
     padding: 1.25rem 0;
+    border-bottom: 2px solid var(--primary);
    
 }
 
