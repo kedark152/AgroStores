@@ -40,7 +40,7 @@ nav{
     margin: 5px;
 }
 
-#heart{
+.heart-icon{
     position: absolute;
     top: 0.5rem;
     right: 5px;
