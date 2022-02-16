@@ -19,15 +19,15 @@ nav, footer{
    display: flex;
    flex-direction: column;
    width: 28rem;
-   border-radius: 10px;
+   border-radius: var(--radius-md);
    background-color: var(--white);
    box-shadow: var(--box-shadow-1);
    height: fit-content;
-   padding: 1rem 1.5rem ;
+   padding: var(--size-sm) var(--size-md) ;
 }
 
 .login-card input{
- height: 2rem;
+ height: var(--size-lg);
  font-size: 1.1rem;
 }
 
@@ -40,7 +40,7 @@ nav, footer{
 }
 
 .login-card .btn{
-    padding: 1rem;
+    padding: var(--size-sm);
     border: none;
     justify-content: center;
     width: 100%;
