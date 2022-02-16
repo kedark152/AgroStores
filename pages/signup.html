@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup | Agrostores</title>
+    <!-- Import Component Library -->
+    <link
+      rel="stylesheet"
+      href="https://forest-ui.netlify.app/stylesheets/main.css"
+    />
+    <!-- Import External css -->
+    <link rel="stylesheet" href="../css/page-styles/signup.css" />
+  </head>
+  <body>
+    <!-- nav-bar -->
+    <nav class="align-center">
+      <div class="nav-brand fs-md"><a href="../index.html">AgroStores</a></div>
+      <div class="search-field">
+        <i class="material-icons" id="search-icon">search</i>
+        <input
+          type="text"
+          name="search-bar"
+          id="search-bar"
+          placeholder="Search"
+        />
+      </div>
+
+      <ul class="nav-pills align-center fw-bold">
+        <li><a href="#" class="btn btn-solid btn-login">Login</a></li>
+        <li>
+          <a href="./wishlist.html">
+            <i class="material-icons mg-left-sm">favorite_border</i>
+            <span class="badge-count">2</span>
+          </a>
+        </li>
+        <li>
+          <a href="./cart.html">
+            <i class="material-icons mg-left-sm" id="shop-cart">
+              shopping_cart
+            </i>
+            <span class="badge-count">2</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Main-container -->
+    <div class="container flex-column-center mg-top-sm mg-bottom-sm">
+      <div class="signup-card">
+        <!-- Heading -->
+        <h2 class="text-center mg-xsm">Signup</h2>
+        <!-- Full-Name -->
+        <div class="full-name-item flex-column mg-xsm fw-bold">
+          <label for="full-name" class="mg-bottom-xsm">Full Name</label>
+          <input
+            type="text"
+            class="mg-bottom-xsm"
+            id="full-name"
+            placeholder="Ram Mishra"
+          />
+        </div>
+        <!-- Email-id -->
+        <div class="email-id-item mg-xsm flex-column fw-bold">
+          <label for="email-id" class="mg-bottom-xsm">Email address</label>
+          <input
+            type="email"
+            id="email-id"
+            class="mg-bottom-xsm"
+            placeholder="ram.mishra@gmail.com"
+          />
+        </div>
+        <!-- Password -->
+        <div class="password-item mg-xsm flex-column fw-bold">
+          <label for="password" class="mg-bottom-xsm">Password</label>
+          <input
+            type="password"
+            name=""
+            id="password"
+            class="mg-bottom-xsm"
+            minlength="8"
+          />
+          <i class="material-icons pwd-show-icon">visibility</i>
+        </div>
+        <!--Confirm Password -->
+        <div class="confirm-password-item mg-xsm flex-column fw-bold">
+          <label for="confirm-password" class="mg-bottom-xsm">
+            Confirm Password
+          </label>
+          <input
+            type="password"
+            name=""
+            id="confirm-password"
+            class="mg-bottom-xsm"
+            minlength="8"
+          />
+          <i class="material-icons pwd-show-icon">visibility</i>
+        </div>
+        <!-- Terms & Condition -->
+        <div class="terms-item mg-xsm fw-bold align-center">
+          <input
+            type="checkbox"
+            class="mg-xsm"
+            name=""
+            id="terms"
+            class="mg-bottom-xsm"
+          />
+          <label for="terms">I accept all Terms & Conditions</label>
+        </div>
+        <!-- Buttons -->
+        <a href="" class="btn btn-solid fw-bold">Create New Account</a>
+        <a href="#" class="btn btn-outline-icon fw-bold">
+          Already have an account?<i class="material-icons">chevron_right</i>
+        </a>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="flex-column-center pd-sm">
+      <p class="mg-bottom-xsm">Made by Kedar Kulkarni</p>
+      <div class="footer-links mg-bottom-xsm">
+        <a class="mg-xsm fs-sm-plus" href="https://github.com/kedark152"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          class="mg-xsm fs-sm-plus"
+          href="https://www.linkedin.com/in/kedark152"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a class="mg-xsm fs-sm-plus" href="https://twitter.com/Kulkarni12Kedar"
+          ><i class="fab fa-twitter"></i
+        ></a>
+      </div>
+      <p class="copyright mg-bottom-xsm">© 2022 AgroStores</p>
+    </footer>
+  </body>
+</html>
