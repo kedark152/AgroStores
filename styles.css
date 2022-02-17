@@ -18,28 +18,24 @@ html{
     position: relative;
 }
 
-.banner-title{
-    margin-top: 1.2rem;
+.header-content{
+    gap: 1.5rem;
+    text-shadow: 1px 1px var(--white);
 }
 
 .btn-shop-now{
-    position: absolute;
     background-color: var(--white);
-    border: 2px solid var(--primary-hover);
+    border: 3px solid var(--primary);
     color: var(--primary);
     width: 10rem;
     font-size: 1.5rem;
     padding:0.5rem 1.5rem;
-    top: 50%;
-    left: 50%;
-    /* Center the button in div */
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+    margin-top:  5rem;
 }
 
 .btn-shop-now:hover{
     color: var(--white);
-    border: 2px solid var(--white);
+    border: 3px solid var(--white);
 }
 .title-underline {
     background-color: var(--primary);
@@ -49,27 +45,28 @@ html{
 }
 .categories{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(5rem, 15rem));
-    grid-gap: 1rem;
-    justify-content: center;
-    margin: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(5rem, 16rem));
+    grid-gap: 0.5rem;
+    justify-content: space-around;
   
 }
 .category-items{
     position: relative;
     opacity: 0.8;
     border-radius: 5px;
+
 }
 
 .category-items:hover{
    opacity: 1;
    cursor: pointer;
-   box-shadow: 0 2px 8px;
+   box-shadow: var(--box-shadow-2); 
+ 
 }
 .categories img{
     height: 100%;
-  object-fit: cover;
-  border-radius: 5px;
+    object-fit: cover;
+    border-radius: 5px;
   
 }
 
@@ -77,25 +74,32 @@ html{
     position: absolute;
     top: 4rem;
     left:4rem;
-    color: var(--secondary);
+    color: var(--dark-blue);
     background-color: var(--transparent-grey);
     padding: 0.5rem;
+    letter-spacing: 2px;
 }
 
-
+.banner-subtitle{
+    color:var(--dark-blue);
+}
 
 @media screen and (max-width: 800px){
+    .hero-header{
+        height: 140vh;
+    }
+    
   .banner-title{
-      font-size: 1.5rem;
+      font-size: 2rem;
       letter-spacing: 2px;
       margin: 0.5rem;
       line-height: normal;
+
   }
   .banner-subtitle{
-      font-size: 1rem;
+      font-size: 1.5rem;
       letter-spacing: 1px;
-      margin: 0.5rem;
       line-height: normal;
   }
-  
+ 
 }
