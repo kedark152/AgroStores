@@ -6,7 +6,7 @@ Visit the Website: https://agrostores.netlify.app
 
 ## Below are the list of Featured Categories
 
-1. Fertilzers
+1. Fertilizers
 2. Pesticides
 3. Farm-Tools
 4. Seeds
