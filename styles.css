@@ -4,6 +4,7 @@
 html{
     background-color: var(--lightest-green);
     font-family: var(--acme-font);
+    scroll-behavior: smooth;
 }
 
 /* Header */
@@ -45,15 +46,19 @@ html{
 }
 .categories{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(5rem, 16rem));
+    grid-template-columns: repeat(auto-fit, minmax(14rem,1fr));
     grid-gap: 0.5rem;
-    justify-content: space-around;
+    grid-auto-rows: 14rem;
+    padding: 1rem;
+    
+    
   
 }
 .category-items{
     position: relative;
     opacity: 0.8;
     border-radius: 5px;
+
 
 }
 
@@ -65,7 +70,8 @@ html{
 }
 .categories img{
     height: 100%;
-    object-fit: cover;
+    width:100%;
+    object-fit:cover;
     border-radius: 5px;
   
 }
