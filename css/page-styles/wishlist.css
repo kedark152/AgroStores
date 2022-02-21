@@ -2,13 +2,12 @@
 @import url(../layouts/footer.css);
 @import url(../utilities/variables.css);
 
-nav{
-    font-family: var(--acme-font);
-}
+
 html{
-    background-color: var(--primary-transparent);
+   scroll-behavior: smooth;
 }
 body{
+    background-color: var(--primary-transparent);
     font-family: var(--lato-font);
 }
 .container{
