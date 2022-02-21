@@ -5,11 +5,12 @@ nav a{
 
 nav{
     flex-wrap: wrap;
-    height: min-content;
+    height: 5.5rem;
     justify-content: space-around;
-    padding: 1.25rem 0;
+    padding: 1rem 0;
+    background-color: var(--white);
     border-bottom: 2px solid var(--primary);
-   
+    font-family: var(--acme-font);
 }
 
 #search-bar, .search-field{
@@ -47,3 +48,10 @@ nav{
     cursor: pointer;
     font-size: 2rem;
 }
+
+@media only screen and (max-width: 800px){
+    nav{
+        height: min-content;
+    }
+}
+
