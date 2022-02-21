@@ -2,28 +2,26 @@
 @import url(../layouts/navbar.css);
 @import url(../layouts/footer.css);
 
-nav{
-    border-bottom: 2px solid var(--primary);
-    font-family: var(--acme-font);
+html{
+    scroll-behavior: smooth;
 }
 
-html{
+body{
     background-color: var(--primary-transparent);
 }
 
 .container-main{
-    position: relative;
+    display: flex;
     font-family: var(--lato-font);
+    padding: var(--size-sm);
+    gap: var(--size-sm);
 }
 
 /* Filters-Sidebar */
 .filters-sidebar{
   background-color: var(--tree-green);
   border-radius: 5px;
-  width: 18vw;
-  position: absolute;
-  top: 10px;
-  left: 10px;
+  width: 20rem;
 }
 .filters-sidebar a{
     color: var(--black);
@@ -38,23 +36,21 @@ input[type="checkbox"], input[type="radio"]{
     height: 1rem;
 }
 
-.filter-title{
+.filter-title, .filter-price{
     justify-content: space-between;
 }
-.filter-price{
-    justify-content: space-between;
+
+.price-slider{
+    width: 12.5rem;
 }
+
 /* Products listing */
 .products-list{
-    position: relative;
-    top: 10px;
-    left: 16rem;
     display: grid;
-    width: 75vw;
-    grid-template-columns: repeat(auto-fill,15rem);
+    width: 100%;
+    grid-template-columns: repeat(auto-fit,15rem);
     grid-auto-rows: min(30rem,auto);
-    grid-gap: 0.5rem;
-    margin-bottom: 1rem;
+    grid-gap: 1rem;
     justify-content: space-evenly;
 }
 
@@ -71,31 +67,32 @@ input[type="checkbox"], input[type="radio"]{
     font-weight: bold;
 }
 
-footer{
-    font-family: var(--lato-font);
-}
-
 .btn-filter-float{
     display: none;
 }
 
 /* Responsiveness */
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 600px){
     .filters-sidebar{
-        display:none;
-        width: 100%;
+        display: none;
+        position: absolute;
+        width: 15rem;
         height: 100%;
         top:0;
-        left:0;
-        padding: 3rem;
+        left: 0;
         z-index: 2;  
+        box-shadow: var(--box-shadow-right);
+    }
+    
+    .products-list{
+        width: 100%;
     }
 
-    .products-list{
-        width: 100vw;
-        left:0;
-        justify-content: center; 
+    .container-main{
+        display: block;
+        position: relative;
     }
+
     .btn-filter-float{
         display: block;
         position: fixed;
