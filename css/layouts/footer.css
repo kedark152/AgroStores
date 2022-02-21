@@ -1,6 +1,7 @@
 footer{
     background-color: var(--primary);
     color: var(--white);
+    font-family: var(--acme-font);
 }
 
 .footer-links a{
