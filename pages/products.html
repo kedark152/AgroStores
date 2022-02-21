@@ -53,7 +53,7 @@
     <!-- Main Container -->
     <div class="container-main">
       <!-- Filters Side-Bar -->
-      <aside class="filters-sidebar flex-column pd-sm">
+      <aside class="filters-sidebar flex-column pd-sm" id="filter-bar">
         <div class="filter-title align-center mg-top-xsm">
           <p class="para-md fw-bold filter-title">Filters</p>
           <a class="para-sm" href="#">Clear</a>
@@ -62,9 +62,9 @@
           <p class="para-md fw-bold">Price in ₹</p>
         </div>
         <div class="filter-price flex">
-          <p id="price-min">100</p>
-          <p id="price-mid">1500</p>
-          <p id="price-max">3000</p>
+          <span id="price-min">100</span>
+          <span id="price-mid">1500</span>
+          <span id="price-max">3000</span>
         </div>
         <input
           step="100"
@@ -72,7 +72,7 @@
           min="100"
           max="3000"
           value="100"
-          class="price-slider"
+          class="price-slider mg-left-xsm"
           id="price-range"
         />
 
@@ -325,9 +325,9 @@
       </div>
     </div>
     <!-- Filter on Mobile Button -->
-    <div class="btn-float-action btn-filter-float">
+    <a href="#filter-bar" class="btn-float-action btn-filter-float">
       <i class="material-icons" id="filter-icon">filter_alt</i>
-    </div>
+    </a>
     <!-- Footer -->
     <footer class="flex-column-center pd-sm">
       <p class="mg-bottom-xsm">Made by Kedar Kulkarni</p>
