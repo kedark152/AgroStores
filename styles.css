@@ -2,9 +2,11 @@
 @import url(./css/layouts/navbar.css);
 @import url(./css/layouts/footer.css);
 html{
-    background-color: var(--lightest-green);
     font-family: var(--acme-font);
     scroll-behavior: smooth;
+}
+body{
+    background-color: var(--lightest-green);
 }
 
 /* Header */
