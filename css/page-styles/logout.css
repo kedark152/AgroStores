@@ -1,0 +1,19 @@
+@import url(../utilities/variables.css);
+@import url(../layouts/navbar.css);
+@import url(../layouts/footer.css);
+
+body{
+    background-color: var(--primary-transparent);
+    font-family: var(--lato-font);
+}
+.container{
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
