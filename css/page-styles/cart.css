@@ -3,15 +3,12 @@
 @import url(../layouts/footer.css);
 
 html{
-    background-color: var(--primary-transparent);
+    scroll-behavior: smooth;
 }
 body{
+    background-color: var(--primary-transparent);
     font-family: var(--lato-font);
 }
-nav{
-    font-family: var(--acme-font);
-}
-
 
 .cart-heading{
     color: var(--primary);
