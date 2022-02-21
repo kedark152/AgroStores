@@ -4,14 +4,13 @@
 
 
 html{
-    background-color: var(--primary-transparent);
+   scroll-behavior: smooth;
 }
 body{
+    background-color: var(--primary-transparent);
     font-family: var(--lato-font);
 }
-nav, footer{
-    font-family: var(--acme-font);
-}
+
 .container{
     width: 100%;
 }
