@@ -18,9 +18,11 @@ Visit the Website: https://agrostores.netlify.app
 
 ## Pages on Agrostores website
 
-1. Home-Page
-2. Product Listing Page
-3. Wishlist Page
-4. My Cart Page
-5. Login Page
-6. Sign-up Page
+1. Home-Page: https://agrostores.netlify.app/
+2. Product Listing Page: https://agrostores.netlify.app/pages/products.html
+3. Wishlist Page: https://agrostores.netlify.app/pages/wishlist.html
+4. My Cart Page: https://agrostores.netlify.app/pages/cart.html
+5. Login Page: https://agrostores.netlify.app/pages/login.html
+6. Sign-up Page: https://agrostores.netlify.app/pages/signup.html
+7. Logout Page: https://agrostores.netlify.app/pages/logout.html
+
